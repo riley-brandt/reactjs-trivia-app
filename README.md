@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Creating a React Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<https://www.youtube.com/watch?v=8LNb18ibNGs>
 
-## Available Scripts
+<https://codedamn.com/learn/reactjs-projects#buy>
 
-In the project directory, you can run:
+## What's required?
 
-### `npm start`
+### States
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Main menu
+2. Playing the game
+3. End screen
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Basic Steps
 
-### `npm test`
+### 1. Setup up useState App.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In App.js, import useState() and set it up:
 
-### `npm run build`
+```
+import "./App.css";
+import React, { useState } from "react";
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+function App() {
+  const [gameState, setGameState] = useState("menu");
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Create 3 components
 
-### `npm run eject`
+- MainMenu.js
+- Quiz.js
+- EndScreen.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Test if components & state are working
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+  return (
+    <div className="App">
+      <h1>Quiz App</h1>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+      {gameState === "menu" && <MainMenu />}
+    </div>
+  );
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Next
 
-## Learn More
+- add a button with className to the MainMenu.js component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Create a global variable/state/context
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- In src/ create folder called "helpers"
+- inside the helpers foler, create Context.js
 
-### Code Splitting
+In Context.js:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+import { createContext } from "react";
 
-### Analyzing the Bundle Size
+export const QuizContext = createContext();
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+- In App.js, import {QuizContext}
+- warp everythign in `<QuizContext.Provider>`
+- pass the states: `<QuizContext.Provider value={{ gameState, setGameState }}>`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+````
+  return (
+    <div className="App">
+      <h1>Quiz App</h1>
+      <QuizContext.Provider value={{ gameState, setGameState }}>
+        {gameState === "menu" && <MainMenu />}
+        {gameState === "quiz" && <Quiz />}
+        {gameState === "endScreen" && <EndScreen />}
+      </QuizContext.Provider>
+    </div>
+  );```
+````
 
-### Advanced Configuration
+In MainMenu.js, import useContext and the {QuizContext}, ie:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+import React, { useContext } from "react";
+import { QuizContext } from "../helpers/Contexts";
 
-### Deployment
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+In MainMenu.js, pass the context:
 
-### `npm run build` fails to minify
+      const { gameState, setGameState } = useContext(QuizContext);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MainMenu event listener Function
+
+```
+      <button
+        onClick={() => {
+          setGameState("quiz");
+        }}
+      >
+        Start Quiz
+      </button>
+
+```
+
+# Stopped tutorial at 15mins
+
+<https://www.youtube.com/watch?v=8LNb18ibNGs>
