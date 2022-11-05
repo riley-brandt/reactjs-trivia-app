@@ -6,13 +6,20 @@ function Quiz() {
   const { score, setScore } = useContext(QuizContext);
   const [currentQ, setCurrentQ] = useState(0);
   const [answerSelected, setAnswerSelected] = useState("");
-  // const { gameState, setGameState } = useContext(QuizContext);
+  const { gameState, setGameState } = useContext(QuizContext);
 
   const nextQuestion = () => {
     if (Questions[currentQ].answer == answerSelected) {
       setScore(score + 1);
     }
     setCurrentQ(currentQ + 1);
+  };
+
+  const finishQuiz = () => {
+    if (Questions[currentQ].answer == answerSelected) {
+      setScore(score + 1);
+    }
+    setGameState("score");
   };
 
   return (
@@ -32,11 +39,21 @@ function Quiz() {
           {Questions[currentQ].option4}
         </button>
       </div>
-      <button onClick={nextQuestion}>Next Question</button>
-      {/* onClick={() => console.log(answerSelected)} */}
-      {/* if answerSelected === Questions.answer : score +1 */}
+      {currentQ == Questions.length - 1 ? (
+        <button onClick={finishQuiz}>Finish Quiz</button>
+      ) : (
+        <button onClick={nextQuestion}>Next Question</button>
+      )}
     </div>
   );
 }
 
 export default Quiz;
+
+// ============ IDEAS & CUT CODE =========
+
+<div>
+  {/* onClick={() => console.log(answerSelected)} */}
+  {/* if answerSelected === Questions.answer : score +1 */}
+  {/* {if currentQ == Questions.length - 1 ? ()} */}
+</div>;
