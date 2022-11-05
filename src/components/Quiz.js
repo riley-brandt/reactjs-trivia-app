@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { Questions } from "../helpers/Questions";
+import { QuizContext } from "../helpers/Contexts";
 
 function Quiz() {
-  return <div>Quiz</div>;
+  const { score, setScore } = useContext(QuizContext);
+  const [currentQ, setCurrentQ] = useState(0);
+  const [answerSelected, setAnswerSelected] = useState("");
+  // const { gameState, setGameState } = useContext(QuizContext);
+
+  const nextQuestion = () => {
+    if (Questions[currentQ].answer == answerSelected) {
+      setScore(score + 1);
+    }
+    setCurrentQ(currentQ + 1);
+  };
+
+  return (
+    <div className="Quiz">
+      <h3>{Questions[currentQ].question}</h3>
+      <div className="options">
+        <button onClick={() => setAnswerSelected("option1")}>
+          {Questions[currentQ].option1}
+        </button>
+        <button onClick={() => setAnswerSelected("option2")}>
+          {Questions[currentQ].option2}
+        </button>
+        <button onClick={() => setAnswerSelected("option3")}>
+          {Questions[currentQ].option3}
+        </button>
+        <button onClick={() => setAnswerSelected("option4")}>
+          {Questions[currentQ].option4}
+        </button>
+      </div>
+      <button onClick={nextQuestion}>Next Question</button>
+      {/* onClick={() => console.log(answerSelected)} */}
+      {/* if answerSelected === Questions.answer : score +1 */}
+    </div>
+  );
 }
 
 export default Quiz;
