@@ -1,8 +1,9 @@
-# Creating a React Quiz App
+# A React Quiz App
+##### by Riley Brandt
 
 ### Features and Bugs
 * If answerSelected state == "", alert with button pressed
-* 
+* Quiz Buttons: when clicked, bg colour changes
 
 ### Ideas
 
@@ -128,9 +129,3 @@ MainMenu event listener Function
       </button>
 
 ```
-
-
-
-# Stopped tutorial at 33mins
-
-<https://www.youtube.com/watch?v=8LNb18ibNGs>

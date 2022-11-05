@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import { Questions } from "../helpers/Questions";
 import { QuizContext } from "../helpers/Contexts";
 
+import "./Quiz.css";
+
 function Quiz() {
   const { score, setScore } = useContext(QuizContext);
   const [currentQ, setCurrentQ] = useState(0);
@@ -26,24 +28,43 @@ function Quiz() {
     <div className="Quiz">
       <h3>{Questions[currentQ].question}</h3>
       <div className="options">
-        <button onClick={() => setAnswerSelected("option1")}>
+        <button
+          className="btn-quiz"
+          onClick={() => setAnswerSelected("option1")}
+        >
           {Questions[currentQ].option1}
         </button>
-        <button onClick={() => setAnswerSelected("option2")}>
+        <br />
+        <button
+          className="btn-quiz"
+          onClick={() => setAnswerSelected("option2")}
+        >
           {Questions[currentQ].option2}
         </button>
-        <button onClick={() => setAnswerSelected("option3")}>
+        <br />
+        <button
+          className="btn-quiz"
+          onClick={() => setAnswerSelected("option3")}
+        >
           {Questions[currentQ].option3}
         </button>
-        <button onClick={() => setAnswerSelected("option4")}>
+        <br />
+        <button
+          className="btn-quiz"
+          onClick={() => setAnswerSelected("option4")}
+        >
           {Questions[currentQ].option4}
         </button>
+        <br />
+        <br />
       </div>
-      {currentQ == Questions.length - 1 ? (
-        <button onClick={finishQuiz}>Finish Quiz</button>
-      ) : (
-        <button onClick={nextQuestion}>Next Question</button>
-      )}
+      <div className="btn-quiz-nav">
+        {currentQ == Questions.length - 1 ? (
+          <button onClick={finishQuiz}>Finish Quiz</button>
+        ) : (
+          <button onClick={nextQuestion}>Next Question</button>
+        )}
+      </div>
     </div>
   );
 }
