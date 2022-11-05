@@ -1,8 +1,32 @@
 # Creating a React Quiz App
 
-<https://www.youtube.com/watch?v=8LNb18ibNGs>
+### Features and Bugs
+* If answerSelected state == "", alert with button pressed
+* 
 
-<https://codedamn.com/learn/reactjs-projects#buy>
+### Ideas
+
+* 3 "pages": start, quiz, score
+* A variable to track the score
+* A counter to track each question
+* Beautiful CSS layout
+
+### Stretch goals
+* A multi-page layout that uses Routers
+* Bootstrap for CSS
+* Dynamic backgrounds for questions
+
+### Reference Tutorials
+
+[Pedro Tech: Coding a Quiz App in React JS](https://www.youtube.com/watch?v=8LNb18ibNGs)
+
+[Chris Blakely: React Quiz App Tutorial](https://www.youtube.com/watch?v=Lya-qYiDqIA)
+
+[Learn ReactJS by Building 5 Projects](https://codedamn.com/learn/reactjs-projects#buy)
+
+### Quiz Questions
+[W3Schools: React Quiz](https://www.w3schools.com/react/react_quiz.asp)
+
 
 ## What's required?
 
@@ -105,6 +129,8 @@ MainMenu event listener Function
 
 ```
 
-# Stopped tutorial at 15mins
+
+
+# Stopped tutorial at 33mins
 
 <https://www.youtube.com/watch?v=8LNb18ibNGs>
