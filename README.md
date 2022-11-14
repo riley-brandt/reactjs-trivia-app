@@ -1,21 +1,20 @@
-# A React Quiz App
+# A React JS Quiz App
 ##### by Riley Brandt
 
-### Features and Bugs
-* If answerSelected state == "", alert with button pressed
-* Quiz Buttons: when clicked, bg colour changes
+### To Do
+* create a new repository and upload app
+* style CSS
+* watch the 1st [Modal Tutorial](https://www.youtube.com/watch?v=10FNqoPpNbE) and 2nd [Modal Tutorial](https://www.youtube.com/watch?v=ZCvemsUfwPQ)
+* review the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) article
 
-### Ideas
-
-* 3 "pages": start, quiz, score
-* A variable to track the score
-* A counter to track each question
-* Beautiful CSS layout
-
-### Stretch goals
+### Features to Add/ Stretch Goals
+* change the bg colour of the selected button
+* add a question counter
+* add a modal pop-up that says correct/incorrect
 * A multi-page layout that uses Routers
 * Bootstrap for CSS
-* Dynamic backgrounds for questions
+* Background image like [Cursed to Golf](https://thunderfulgames.com/games/cursed-to-golf/)
+
 
 ### Reference Tutorials
 
@@ -89,7 +88,7 @@ export const QuizContext = createContext();
 ```
 
 - In App.js, import {QuizContext}
-- warp everythign in `<QuizContext.Provider>`
+- warp everything in `<QuizContext.Provider>`
 - pass the states: `<QuizContext.Provider value={{ gameState, setGameState }}>`
 
 ````
