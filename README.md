@@ -129,3 +129,49 @@ MainMenu event listener Function
       </button>
 
 ```
+
+## Button Toggle Example:
+
+[Button toggle](https://react.school/ui/button)
+
+In order to add toggle functionality we need to keep track of the state of which button is toggled. We're going to use react hooks for that. We loop through a types array which we use for the text for the Button, but also as the string to keep track of which button is active. We initialize the useState hook with the first type from the array. Then, we loop over the types and render a ButtonToggle, which is extended from our other Button we had previously created so we could add styles to dim the opacity when it is not active (default). When it is active, it's back to the normal opacity.
+
+We check active, which is the current state, against the type that we loop over. When we click on the Button, we run our arrow function which calls the setActive setter. This sets the next active button to be whatever type we click on. This example is practically identical to our tabs guide except we remove the background on the Buttons to make them look like tabs there.
+
+```
+import React, { useState } from 'react';
+import styled from 'styled-components';
+const Button = styled.button`
+  /* Same as above */
+`;
+const ButtonToggle = styled(Button)`
+  opacity: 0.6;
+  ${({ active }) =>
+    active &&
+    `
+    opacity: 1;
+  `}
+`;
+const ButtonGroup = styled.div`
+  display: flex;
+`;
+const types = ['Cash', 'Credit Card', 'Bitcoin'];
+function ToggleGroup() {
+  const [active, setActive] = useState(types[0]);
+  return (
+    <ButtonGroup>
+      {types.map(type => (
+        <ButtonToggle
+          key={type}
+          active={active === type}
+          onClick={() => setActive(type)}
+        >
+          {type}
+        </ButtonToggle>
+      ))}
+    </ButtonGroup>
+  );
+}
+
+
+```

@@ -5,10 +5,10 @@ import { QuizContext } from "../helpers/Contexts";
 import "./Quiz.css";
 
 function Quiz() {
+  const { gameState, setGameState } = useContext(QuizContext);
   const { score, setScore } = useContext(QuizContext);
   const [currentQ, setCurrentQ] = useState(0);
   const [answerSelected, setAnswerSelected] = useState("");
-  const { gameState, setGameState } = useContext(QuizContext);
 
   const nextQuestion = () => {
     if (Questions[currentQ].answer == answerSelected) {
@@ -78,3 +78,10 @@ export default Quiz;
   {/* if answerSelected === Questions.answer : score +1 */}
   {/* {if currentQ == Questions.length - 1 ? ()} */}
 </div>;
+
+// Button toggle ideas
+// 1. create a state for the active button, ie:
+// const [activeButton, setActiveButton] = useState();
+// 2. create a className/css style for activeButtons
+// 3. assign the clicked button the active-btn class
+// 4. how do I remove the active class when another button is pressed?
