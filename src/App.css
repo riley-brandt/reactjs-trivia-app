@@ -1,23 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Wendy One", sans-serif;
+  color: #fefcff;
+  text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857;
+}
+
 .App {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 1rem;
+  background-color: #2f3857;
+  height: 100vh;
+  padding-top: 1rem;
 }
 
 .app-bg {
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;
   width: 400px;
-  height: auto;
-  background-color: #b0dcff;
-  border-radius: 5px;
+  height: 700px;
+  border: solid 8px #fefcff;
+  background-color: #70acf6;
+  border-radius: 10px;
   padding: 1rem;
-  /* flex-direction: column; */
+  box-shadow: 6px 6px 2px #20263b;
 }
 .app-container {
   margin-top: 1rem;

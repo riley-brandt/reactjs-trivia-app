@@ -5,15 +5,18 @@ import "./MainMenu.css";
 function MainMenu() {
   const { gameState, setGameState } = useContext(QuizContext);
   return (
-    <div className="Menu">
-      <button
-        onClick={() => {
-          setGameState("quiz");
-        }}
-      >
-        Start Quiz
-      </button>
-    </div>
+    <>
+      <p>A React JS app by Riley Brandt</p>
+      <div className="Menu">
+        <button
+          onClick={() => {
+            setGameState("quiz");
+          }}
+        >
+          Start Quiz
+        </button>
+      </div>
+    </>
   );
 }
 

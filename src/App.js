@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div className="app-bg">
         <div className="app-container">
-          <h1>Pop Quiz</h1>
+          <h1>Pop Quiz !</h1>
           <QuizContext.Provider
             value={{ gameState, setGameState, score, setScore }}
           >
@@ -23,7 +23,6 @@ function App() {
             {gameState === "quiz" && <Quiz />}
             {gameState === "score" && <Score />}
           </QuizContext.Provider>
-          {/* <p>A React JS app by Riley Brandt</p> */}
         </div>
       </div>
     </div>

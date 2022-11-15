@@ -4,6 +4,12 @@
 ### To Do
 * create a new repository and upload app
 * style CSS
+	+ Google Fonts title
+	+ Pick a colour scheme
+	+ Style start page
+	+ Style Buttons
+	+ Style hover, select, etc.
+
 * watch the 1st [Modal Tutorial](https://www.youtube.com/watch?v=10FNqoPpNbE) and 2nd [Modal Tutorial](https://www.youtube.com/watch?v=ZCvemsUfwPQ)
 * review the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) article
 
@@ -14,6 +20,29 @@
 * A multi-page layout that uses Routers
 * Bootstrap for CSS
 * Background image like [Cursed to Golf](https://thunderfulgames.com/games/cursed-to-golf/)
+
+### Colour Theme
+
+White
+
+* #fefcff
+
+Blues
+
+* #70acf6
+* #3787e9
+* #1074e6
+* #0d66d1
+* #2f3857
+
+Pinks
+
+* #fdd5fa
+* #ff60f7
+
+
+
+
 
 
 ### Reference Tutorials
