@@ -16,6 +16,7 @@ h1 {
   align-items: center;
   background-color: #2f3857;
   height: 100vh;
+  margin-top: 1rem;
 }
 
 .title {
