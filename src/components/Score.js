@@ -14,13 +14,17 @@ function Score() {
   return (
     <div className="end-screen">
       <h2>Final Score</h2>
-      <h3>
-        {" "}
-        {score} / {Questions.length}{" "}
-      </h3>
-      <button className="btnStartOver" onClick={restartQuiz}>
-        Start Over
-      </button>
+      <div className="score-container">
+        <h1 className="score-numbers">
+          {" "}
+          {score} / {Questions.length}{" "}
+        </h1>
+      </div>
+      <div className="btn-container">
+        <button className="btnStartOver" onClick={restartQuiz}>
+          Start Over
+        </button>
+      </div>
     </div>
   );
 }

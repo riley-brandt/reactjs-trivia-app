@@ -5,8 +5,10 @@ import "./MainMenu.css";
 function MainMenu() {
   const { gameState, setGameState } = useContext(QuizContext);
   return (
-    <>
-      <p>A React JS app by Riley Brandt</p>
+    <div className="mm-container">
+      <div className="q-mark">
+        <h1>?</h1>
+      </div>
       <div className="Menu">
         <button
           onClick={() => {
@@ -16,7 +18,7 @@ function MainMenu() {
           Start Quiz
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

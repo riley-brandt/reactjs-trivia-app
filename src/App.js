@@ -13,9 +13,11 @@ function App() {
 
   return (
     <div className="App">
+      <div className="title">
+        <h1>Pop Quiz !!!</h1>
+      </div>
       <div className="app-bg">
         <div className="app-container">
-          <h1>Pop Quiz !</h1>
           <QuizContext.Provider
             value={{ gameState, setGameState, score, setScore }}
           >

@@ -5,38 +5,46 @@
 h1 {
   font-family: "Wendy One", sans-serif;
   color: #fefcff;
-  text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857;
+  line-height: 1.4rem;
 }
 
 .App {
   font-family: "Roboto", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   background-color: #2f3857;
   height: 100vh;
-  padding-top: 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media (max-width: 460px) {
+  .title {
+    font-size: 1.7rem;
+  }
 }
 
 .app-bg {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
-  width: 400px;
-  height: 700px;
+  width: 365px;
+  min-height: 475px;
   border: solid 8px #fefcff;
   background-color: #70acf6;
   border-radius: 10px;
-  padding: 1rem;
   box-shadow: 6px 6px 2px #20263b;
+  margin-top: 1rem;
 }
 .app-container {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-}
-
-h1 {
-  font-size: 3rem;
+  padding: 1rem;
 }
