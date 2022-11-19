@@ -24,14 +24,13 @@
 
 }
 
+.title {
+  color: #2f3857;
+}
+
 .btn-container {
   margin-top: 3rem;
 }
-
-/* h1 {
-  text-shadow: 2px, 2px, #1c2133;
-} */
-
 
 .btnStartOver {
   padding: 1rem;
