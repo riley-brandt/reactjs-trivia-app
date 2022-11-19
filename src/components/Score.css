@@ -6,21 +6,32 @@
 }
 
 .score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
+  padding: 2rem;
+  background-color: #ff60f7;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.score-numbers {
+  font-size: 3.9rem;
+  /* text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857; */
+
 }
 
 .btn-container {
   margin-top: 3rem;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #1c2133;
-}
+/* h1 {
+  text-shadow: 2px, 2px, #1c2133;
+} */
 
-.score-numbers {
-  font-size: 3rem;
-}
 
 .btnStartOver {
   padding: 1rem;
@@ -28,11 +39,12 @@ h2 {
   border: none;
   border-radius: 10px;
   color: #fefcff;
-  background-color: #ff60f7;
+  background-color: #2f3857;
+  margin-bottom: 2rem;
 }
 
 .btnStartOver:hover {
-  color: #1c2133;
-  background-color: #fdd5fa;
+  color: #fefcff;
+  background-color: #ff60f7;
   cursor: pointer;
 }

@@ -37,7 +37,7 @@ h1 {
   align-content: center;
   text-align: center;
   width: 365px;
-  min-height: 475px;
+  height: fit-content;
   border: solid 8px #fefcff;
   background-color: #70acf6;
   border-radius: 10px;

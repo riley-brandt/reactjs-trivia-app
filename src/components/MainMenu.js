@@ -6,8 +6,10 @@ function MainMenu() {
   const { gameState, setGameState } = useContext(QuizContext);
   return (
     <div className="mm-container">
-      <div className="q-mark">
-        <h1>?</h1>
+      <div className="q-mark-container">
+        <span>
+          <h1 className="q-mark">?</h1>
+        </span>
       </div>
       <div className="Menu">
         <button

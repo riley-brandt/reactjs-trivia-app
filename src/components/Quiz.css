@@ -6,6 +6,7 @@ h3 {
 .Quiz {
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .options {

@@ -3,17 +3,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: blueviolet; */
+  height: 450px;
 }
 
-.Menu {
+.q-mark-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 200px;
+  height: 200px; 
+  background-color: #ff60f7;
+  border-radius: 50%;
+  /* border: solid 1px #2f3857; */
 }
 
 .q-mark {
-  font-size: 7rem;
-  text-align: center;
+  margin-left: 0.5rem;
+  font-size: 12rem;
   /* text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857; */
+  /* background-color: chartreuse; */
+  
 }
+
+.Menu {
+  margin-top: 6rem;
+}
+
 
 .Menu button {
   padding: 1rem;
@@ -23,11 +40,11 @@
   margin-bottom: 1rem;
   cursor: pointer;
   color: #fefcff;
-  background-color: #ff60f7;
+  background-color: #2f3857;
 }
 
 .Menu button:hover {
-  color: #1c2133;
-  background-color: #fdd5fa;
+  color: #fefcff;
+  background-color: #ff60f7;
   cursor: pointer;
 }
