@@ -1,6 +1,9 @@
 # A React JS Quiz App
 ##### by Riley Brandt
 
+### New Git URL
+<https://github.com/riley-brandt/final-project-01.git>
+
 ### To Do
 * create a new repository and upload app
 * style CSS
