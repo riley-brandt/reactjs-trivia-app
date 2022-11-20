@@ -6,6 +6,8 @@ function MainMenu() {
   const { gameState, setGameState } = useContext(QuizContext);
   return (
     <div className="mm-container">
+      <h1 className="title">React Trivia</h1>
+
       <div className="q-mark-container">
         <span>
           <h1 className="q-mark">?</h1>

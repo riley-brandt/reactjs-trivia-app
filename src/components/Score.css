@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
 }
 
 .score-container {
@@ -21,7 +20,6 @@
 .score-numbers {
   font-size: 3.9rem;
   /* text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857; */
-
 }
 
 .title {

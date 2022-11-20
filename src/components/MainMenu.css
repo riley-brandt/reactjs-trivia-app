@@ -1,9 +1,13 @@
 .mm-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 450px;
+  /* justify-content: center; */
+  /* height: 450px; */
+}
+
+.title {
+  color: #2f3857;
 }
 
 .q-mark-container {
@@ -12,32 +16,30 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  width: 200px;
-  height: 200px; 
+  padding: 2rem;
   background-color: #ff60f7;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  /* border: solid 1px #2f3857; */
 }
 
 .q-mark {
   margin-left: 0.5rem;
-  font-size: 12rem;
+  font-size: 10rem;
   /* color: #2f3857; */
   /* text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857; */
   /* background-color: chartreuse; */
-  
 }
 
 .Menu {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
-
 
 .Menu button {
   padding: 1rem;
   border: none;
   border-radius: 10px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   cursor: pointer;
   color: #fefcff;
