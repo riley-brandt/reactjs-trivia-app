@@ -19,6 +19,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* justify-content: space-evenly; */
 }
 
 .btn-quiz {
@@ -37,6 +38,11 @@ h3 {
 .btn-quiz:hover {
   background-color: #1074e6;
 }
+
+.btn-quiz:active {
+  background-color: #ff60f7;
+}
+
 .btn-quiz-nav {
   margin-top: 3rem;
   margin-bottom: 1rem;

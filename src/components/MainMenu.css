@@ -8,6 +8,7 @@
 
 .title {
   color: #2f3857;
+  letter-spacing: 1px;
 }
 
 .q-mark-container {
@@ -16,7 +17,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  padding: 2rem;
   background-color: #ff60f7;
   width: 200px;
   height: 200px;
@@ -26,8 +26,6 @@
 .q-mark {
   margin-left: 0.5rem;
   font-size: 10rem;
-  /* color: #2f3857; */
-  /* text-shadow: -1px 0 #2f3857, 0 1px #2f3857, 1px 0 #2f3857, 0 -1px #2f3857; */
 }
 
 .Menu {
