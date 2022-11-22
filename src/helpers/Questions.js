@@ -33,4 +33,12 @@ export const Questions = [
     option4: "DOM",
     answer: "option2",
   },
+  {
+    question: "What tool does React use to compile JSX?",
+    option1: "React Router",
+    option2: "ReactDOM",
+    option3: "Babel",
+    option4: "JSX Compiler",
+    answer: "option3",
+  },
 ];
