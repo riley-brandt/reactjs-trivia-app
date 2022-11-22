@@ -9,13 +9,14 @@ function Quiz() {
   const { score, setScore } = useContext(QuizContext);
   const [currentQ, setCurrentQ] = useState(0);
   const [answerSelected, setAnswerSelected] = useState("");
+  const [counter, setCounter] = useState(1);
 
-  const nextQuestion = () => {
-    if (Questions[currentQ].answer == answerSelected) {
-      setScore(score + 1);
-    }
-    setCurrentQ(currentQ + 1);
-  };
+  // const nextQuestion = () => {
+  //   if (Questions[currentQ].answer == answerSelected) {
+  //     setScore(score + 1);
+  //   }
+  //   setCurrentQ(currentQ + 1);
+  // };
 
   const finishQuiz = () => {
     if (Questions[currentQ].answer == answerSelected) {
@@ -24,8 +25,22 @@ function Quiz() {
     setGameState("score");
   };
 
+  const nextQuestionPlusCounter = () => {
+    if (Questions[currentQ].answer == answerSelected) {
+      setScore(score + 1);
+    }
+    setCounter(counter + 1);
+    setCurrentQ(currentQ + 1);
+  };
+
   return (
     <div className="Quiz">
+      <div className="counter-container">
+        <span>
+          {" "}
+          {counter} / {Questions.length}
+        </span>
+      </div>
       <h3>{Questions[currentQ].question}</h3>
       <div className="options">
         <button
@@ -62,7 +77,7 @@ function Quiz() {
         {currentQ == Questions.length - 1 ? (
           <button onClick={finishQuiz}>Finish Quiz</button>
         ) : (
-          <button onClick={nextQuestion}>Next Question</button>
+          <button onClick={nextQuestionPlusCounter}>Next Question</button>
         )}
       </div>
     </div>
@@ -78,6 +93,8 @@ export default Quiz;
   {/* if answerSelected === Questions.answer : score +1 */}
   {/* {if currentQ == Questions.length - 1 ? ()} */}
 </div>;
+
+// setCounter(counter + 1)
 
 // Button toggle ideas
 // 1. create a state for the active button, ie:

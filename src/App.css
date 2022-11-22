@@ -27,6 +27,7 @@ h1 {
 @media (max-width: 460px) {
   .title {
     font-size: 1.7rem;
+    /* margin-top: 4rem; */
   }
 }
 

@@ -9,6 +9,12 @@ h3 {
   color: black;
 }
 
+.counter-container {
+  margin-top: 1rem;
+  color: #fefcff;
+  font-weight: bold;
+}
+
 .options {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,20 @@
 # A React JS Quiz App
 ##### by Riley Brandt
 
+### Questions
+* How to normalize CSS? Button margins are different in chrome vs FF
+* How to add multiple commands/functions to an onClick event? Using && doesn't work.
+
+```
+      <div className="btn-quiz-nav">
+        {currentQ == Questions.length - 1 ? (
+          <button onClick={finishQuiz}>Finish Quiz</button>
+        ) : (
+          <button onClick={nextQuestion}>Next Question</button>
+        )}
+      </div>
+```
+
 ### New Git URL
 <https://github.com/riley-brandt/final-project-01.git>
 
