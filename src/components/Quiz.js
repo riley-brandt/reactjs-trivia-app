@@ -24,6 +24,7 @@ function Quiz() {
     }
     setCounter(counter + 1);
     setCurrentQ(currentQ + 1);
+    setAnswerSelected("");
   };
 
   return (
