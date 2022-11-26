@@ -6,7 +6,7 @@ import "./Score.css";
 
 function Score() {
   const { score, setScore, setGameState } = useContext(QuizContext);
-  const restartQuiz = () => {
+  const handleStartOverBtn = () => {
     setScore(0);
     setGameState("menu");
   };
@@ -16,16 +16,14 @@ function Score() {
       <h1 className="title">Final Score</h1>
       <div className="score-container">
         <span>
-
           <h1 className="score-numbers">
             {" "}
             {score} / {Questions.length}{" "}
           </h1>
-
         </span>
       </div>
       <div className="btn-container">
-        <button className="btnStartOver" onClick={restartQuiz}>
+        <button className="btnStartOver" onClick={handleStartOverBtn}>
           Start Over
         </button>
       </div>

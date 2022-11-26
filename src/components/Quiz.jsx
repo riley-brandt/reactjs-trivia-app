@@ -11,14 +11,14 @@ function Quiz() {
   const [answerSelected, setAnswerSelected] = useState("");
   const [counter, setCounter] = useState(1);
 
-  const finishQuiz = () => {
+  const handleFinishQuizBtn = () => {
     if (Questions[currentQ].answer === answerSelected) {
       setScore(score + 1);
     }
     setGameState("score");
   };
 
-  const nextQuestionPlusCounter = () => {
+  const handleNextQuestionBtn = () => {
     if (Questions[currentQ].answer === answerSelected) {
       setScore(score + 1);
     }
@@ -84,9 +84,9 @@ function Quiz() {
       </div>
       <div className="btn-quiz-nav">
         {currentQ === Questions.length - 1 ? (
-          <button onClick={finishQuiz}>Finish Quiz</button>
+          <button onClick={handleFinishQuizBtn}>Finish Quiz</button>
         ) : (
-          <button onClick={nextQuestionPlusCounter}>Next Question</button>
+          <button onClick={handleNextQuestionBtn}>Next Question</button>
         )}
       </div>
     </div>

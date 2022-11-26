@@ -5,8 +5,8 @@ import Quiz from "./components/Quiz";
 import Score from "./components/Score";
 
 import React, { useState } from "react";
-
 import { QuizContext } from "./helpers/Contexts";
+
 function App() {
   const [gameState, setGameState] = useState("menu");
   const [score, setScore] = useState(0);
