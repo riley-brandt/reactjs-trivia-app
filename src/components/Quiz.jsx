@@ -44,11 +44,10 @@ function Quiz() {
       <div className="options">
         {/* ============= BUTTON 1 ============== */}
         <button
-          className="btn-quiz"
-          onClick={() => setAnswerSelected("option1")}
           className={
             answerSelected === "option1" ? "btn-quiz-selected" : "btn-quiz"
           }
+          onClick={() => setAnswerSelected("option1")}
         >
           {Questions[currentQ].option1}
         </button>
@@ -56,11 +55,10 @@ function Quiz() {
         {/* ============= BUTTON 2 ============== */}
 
         <button
-          className="btn-quiz"
-          onClick={() => setAnswerSelected("option2")}
           className={
             answerSelected === "option2" ? "btn-quiz-selected" : "btn-quiz"
           }
+          onClick={() => setAnswerSelected("option2")}
         >
           {Questions[currentQ].option2}
         </button>
@@ -68,11 +66,10 @@ function Quiz() {
         {/* ============= BUTTON 3 ============== */}
 
         <button
-          className="btn-quiz"
-          onClick={() => setAnswerSelected("option3")}
           className={
             answerSelected === "option3" ? "btn-quiz-selected" : "btn-quiz"
           }
+          onClick={() => setAnswerSelected("option3")}
         >
           {Questions[currentQ].option3}
         </button>
@@ -80,11 +77,10 @@ function Quiz() {
         {/* ============= BUTTON 4 ============== */}
 
         <button
-          className="btn-quiz"
-          onClick={() => setAnswerSelected("option4")}
           className={
             answerSelected === "option4" ? "btn-quiz-selected" : "btn-quiz"
           }
+          onClick={() => setAnswerSelected("option4")}
         >
           {Questions[currentQ].option4}
         </button>
