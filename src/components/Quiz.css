@@ -19,7 +19,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: space-evenly; */
 }
 
 .btn-quiz {
@@ -29,6 +28,19 @@ h3 {
   margin-top: 0.5rem;
   color: #fefcff;
   background-color: #2f3857;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.btn-quiz-selected {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #fefcff;
+  background-color: #ff60f7;
   border: none;
   border-radius: 10px;
   text-align: left;
