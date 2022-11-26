@@ -12,14 +12,14 @@ function Quiz() {
   const [counter, setCounter] = useState(1);
 
   const finishQuiz = () => {
-    if (Questions[currentQ].answer == answerSelected) {
+    if (Questions[currentQ].answer === answerSelected) {
       setScore(score + 1);
     }
     setGameState("score");
   };
 
   const nextQuestionPlusCounter = () => {
-    if (Questions[currentQ].answer == answerSelected) {
+    if (Questions[currentQ].answer === answerSelected) {
       setScore(score + 1);
     }
     setCounter(counter + 1);
@@ -83,7 +83,7 @@ function Quiz() {
         </button>
       </div>
       <div className="btn-quiz-nav">
-        {currentQ == Questions.length - 1 ? (
+        {currentQ === Questions.length - 1 ? (
           <button onClick={finishQuiz}>Finish Quiz</button>
         ) : (
           <button onClick={nextQuestionPlusCounter}>Next Question</button>
@@ -94,20 +94,3 @@ function Quiz() {
 }
 
 export default Quiz;
-
-// ============ IDEAS & CUT CODE =========
-
-<div>
-  {/* onClick={() => console.log(answerSelected)} */}
-  {/* if answerSelected === Questions.answer : score +1 */}
-  {/* {if currentQ == Questions.length - 1 ? ()} */}
-</div>;
-
-// setCounter(counter + 1)
-
-// Button toggle ideas
-// 1. create a state for the active button, ie:
-// const [activeButton, setActiveButton] = useState();
-// 2. create a className/css style for activeButtons
-// 3. assign the clicked button the active-btn class
-// 4. how do I remove the active class when another button is pressed?
