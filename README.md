@@ -6,7 +6,7 @@
 ![](./app-screenshot-01-crop.png)
 
 ## Play the game!
-![View the live website]()
+![View the live website](https://riley-brandt.github.io/reactjs-trivia-app/)
 
 ## React JS Technologies Utilized
 * Components
