@@ -1,7 +1,7 @@
 # Pop Quiz!!!
 
 
-*Pop Quiz!!!* is a responsive and interactive trivia application developed in **React JS**
+*Pop Quiz!!!* is an interactive trivia application developed in **React JS**
 
 ![](./app-screenshot-01-crop.png)
 
