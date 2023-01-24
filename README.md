@@ -1,10 +1,12 @@
 # Pop Quiz!!!
 
 
-*Pop Quiz!!!* is a simple trivia application developed in React JS **by Riley Brandt**.
+*Pop Quiz!!!* is a responsive and interactive trivia application developed in **React JS**
 
 ![](./app-screenshot-01-crop.png)
 
+## Play the game!
+![View the live website]()
 
 ## React JS Technologies Utilized
 * Components
