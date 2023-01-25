@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactjs-trivia-app/static/css/main.de265aa6.css",
+    "main.js": "/reactjs-trivia-app/static/js/main.f2ff1174.js",
+    "static/js/496.be41e132.chunk.js": "/reactjs-trivia-app/static/js/496.be41e132.chunk.js",
+    "index.html": "/reactjs-trivia-app/index.html",
+    "main.de265aa6.css.map": "/reactjs-trivia-app/static/css/main.de265aa6.css.map",
+    "main.f2ff1174.js.map": "/reactjs-trivia-app/static/js/main.f2ff1174.js.map",
+    "496.be41e132.chunk.js.map": "/reactjs-trivia-app/static/js/496.be41e132.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de265aa6.css",
+    "static/js/main.f2ff1174.js"
+  ]
+}
